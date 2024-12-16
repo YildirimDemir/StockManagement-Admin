@@ -1,0 +1,99 @@
+.dataPage{
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.dataHeader{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 1000px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .dataHeader h2{
+    font-family: monospace;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+
+  .searchInput {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 250px;
+  }
+
+  .searchInput span{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--orange);
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid #747474;
+    border-right: none;
+  }
+
+  .searchInput input{
+    width: 200px;
+    height: 100%;
+    padding: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid #747474;
+    outline: none;
+  }
+
+.dataList{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table{
+    background-color: #141414;
+    border: 2px solid var(--dark-gray);
+}
+
+.tableCaption{
+    color: #fff;
+}
+
+.tableHead{
+    color: var(--orange);
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tableHead::selection{
+    color: var(--orange);
+    background: transparent;
+}
+
+.tableCell {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.tableCell svg{
+    color: orange;
+    font-size: 1.5rem;
+}
